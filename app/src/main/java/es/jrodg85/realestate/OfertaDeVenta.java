@@ -25,14 +25,13 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
   public OfertaDeVenta() {};
 
   public OfertaDeVenta(int idOferta, Vivienda vivienda, float precioVenta) {
-    super(idOferta, vivienda);
+    super(idOferta);
     this.precioVenta = precioVenta;
   }
 
   @Override
   public String toString() {
-    return "La orferta de venta " + getIdOferta() + ", perteneciente a la vivienda "
-        + getVivienda().getIdVivienda() + ", tiene un precio de renta venta  de "
+    return "La orferta de venta " + getIdOferta() + ", tiene un precio de renta venta  de "
         + getPrecioVenta();
   }
 

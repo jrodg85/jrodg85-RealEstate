@@ -37,15 +37,14 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   public OfertaDeAlquiler(int idOferta, Vivienda vivienda, float precioAlquilerMensual,
       int mesesFianza) {
-    super(idOferta, vivienda);
+    super(idOferta);
     this.precioAlquilerMensual = precioAlquilerMensual;
     this.mesesFianza = mesesFianza;
   }
 
   @Override
   public String toString() {
-    return "La orferta de alquiler " + getIdOferta() + ", perteneciente a la vivienda "
-        + getVivienda().getIdVivienda() + ", tiene un precio de renta mensual de "
+    return "La orferta de alquiler " + getIdOferta() + ", tiene un precio de renta mensual de "
         + getPrecioAlquilerMensual() + "€/mes, y una fianza de " + getMesesFianza() + " meses.";
   }
 
