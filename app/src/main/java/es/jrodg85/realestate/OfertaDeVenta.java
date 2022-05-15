@@ -24,8 +24,10 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
 
   public OfertaDeVenta() {};
 
-  public OfertaDeVenta(int idOferta, Vivienda vivienda, float precioVenta) {
-    super(idOferta);
+
+
+  public OfertaDeVenta(String tituloOferta, float precioVenta) {
+    super(tituloOferta);
     this.precioVenta = precioVenta;
   }
 

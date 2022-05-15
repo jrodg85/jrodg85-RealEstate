@@ -5,11 +5,16 @@ public abstract class Oferta {
   // añado campos a Oferta
 
   private long idOferta;
+  private String tituloOferta;
 
   // Añado getters a Oferta
 
   public long getIdOferta() {
     return idOferta;
+  }
+
+  public String getTituloOferta() {
+    return tituloOferta;
   }
 
   // Añado setters a Oferta
@@ -18,13 +23,17 @@ public abstract class Oferta {
     this.idOferta = idOferta;
   }
 
-  // añado constructores
-
-  public Oferta() {};
-
-  public Oferta(long idOferta) {
-    this.idOferta = idOferta;
+  public void setTituloOferta(String tituloOferta) {
+    this.tituloOferta = tituloOferta;
   }
 
+
+  // añado constructores
+
+  public Oferta() {}
+
+  public Oferta(String tituloOferta) {
+    this.tituloOferta = tituloOferta;
+  }
 
 }

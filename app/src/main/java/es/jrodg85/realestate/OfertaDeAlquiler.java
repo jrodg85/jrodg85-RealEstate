@@ -35,9 +35,10 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   public OfertaDeAlquiler() {};
 
-  public OfertaDeAlquiler(int idOferta, Vivienda vivienda, float precioAlquilerMensual,
-      int mesesFianza) {
-    super(idOferta);
+
+
+  public OfertaDeAlquiler(String tituloOferta, float precioAlquilerMensual, int mesesFianza) {
+    super(tituloOferta);
     this.precioAlquilerMensual = precioAlquilerMensual;
     this.mesesFianza = mesesFianza;
   }
