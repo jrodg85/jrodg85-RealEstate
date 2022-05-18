@@ -45,7 +45,7 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   @Override
   public String toString() {
-    return "La orferta de alquiler " + getIdOferta() + ", tiene un precio de renta mensual de "
+    return "La orferta de alquiler tiene un precio de renta mensual de "
         + getPrecioAlquilerMensual() + "€/mes, y una fianza de " + getMesesFianza() + " meses.";
   }
 

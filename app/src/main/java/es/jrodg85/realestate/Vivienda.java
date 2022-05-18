@@ -4,7 +4,6 @@ public class Vivienda {
 
   // Atributos de la clase Vivienda
 
-  private long idVivienda;
   private String propietario;
   private String provincia;
   private String ciudad;
@@ -15,10 +14,6 @@ public class Vivienda {
 
 
   // getters de la clase Vivienda
-
-  public long getIdVivienda() {
-    return idVivienda;
-  }
 
   public String getPropietario() {
     return propietario;
@@ -49,10 +44,6 @@ public class Vivienda {
   }
 
   // Setters de la clase Vivienda
-
-  public void setIdVivienda(int idVivienda) {
-    this.idVivienda = idVivienda;
-  }
 
   public void setPropietario(String propietario) {
     this.propietario = propietario;
@@ -103,11 +94,8 @@ public class Vivienda {
 
   @Override
   public String toString() {
-    return "La vivienda " + getIdVivienda() + ", sita en " + getDireccion() + ", codigo postal "
-        + getCodigoPostal() + " de la ciudad de " + getCiudad() + ",  provinvia de "
-        + getProvincia();
+    return "La vivienda, sita en " + getDireccion() + ", codigo postal " + getCodigoPostal()
+        + " de la ciudad de " + getCiudad() + ",  provinvia de " + getProvincia();
   }
-
-
 
 }

@@ -33,8 +33,7 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
 
   @Override
   public String toString() {
-    return "La orferta de venta " + getIdOferta() + ", tiene un precio de renta venta  de "
-        + getPrecioVenta();
+    return "La orferta de venta tiene un precio de renta venta  de " + getPrecioVenta();
   }
 
 }
