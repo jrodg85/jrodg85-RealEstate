@@ -8,7 +8,8 @@ public class Vivienda {
   private String propietario;
   private String provincia;
   private String ciudad;
-  private String codigoPostal;
+  private String direccion;
+  private int codigoPostal;
   private String idReferenciaCatastral;
   private double superficie;
 
@@ -30,7 +31,11 @@ public class Vivienda {
     return ciudad;
   }
 
-  public String getCodigoPostal() {
+  public String getDireccion() {
+    return direccion;
+  }
+
+  public int getCodigoPostal() {
     return codigoPostal;
   }
 
@@ -60,7 +65,11 @@ public class Vivienda {
     this.ciudad = ciudad;
   }
 
-  public void setCodigoPostal(String codigoPostal) {
+  public void setDireccion(String direccion) {
+    this.direccion = direccion;
+  }
+
+  public void setCodigoPostal(int codigoPostal) {
     this.codigoPostal = codigoPostal;
   }
 
@@ -75,11 +84,12 @@ public class Vivienda {
 
   public Vivienda() {}
 
-  public Vivienda(String propietario, String provincia, String ciudad, String codigoPostal,
-      String idReferenciaCatastral, double superficie) {
+  public Vivienda(String propietario, String provincia, String ciudad, String direccion,
+      int codigoPostal, String idReferenciaCatastral, double superficie) {
     this.propietario = propietario;
     this.provincia = provincia;
     this.ciudad = ciudad;
+    this.direccion = direccion;
     this.codigoPostal = codigoPostal;
     this.idReferenciaCatastral = idReferenciaCatastral;
     this.superficie = superficie;
