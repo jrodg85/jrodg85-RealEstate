@@ -24,7 +24,8 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   public OfertaDeAlquiler() {}
 
-  public OfertaDeAlquiler(double precioDeVenta) {
+  public OfertaDeAlquiler(String tituloOferta, double precioDeVenta) {
+    super(tituloOferta);
     this.precioDeVenta = precioDeVenta;
   }
 

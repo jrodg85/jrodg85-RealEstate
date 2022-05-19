@@ -33,7 +33,8 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
 
   public OfertaDeVenta() {}
 
-  public OfertaDeVenta(double precioAlquilerMensual, int mesesFianza) {
+  public OfertaDeVenta(String tituloOferta, double precioAlquilerMensual, int mesesFianza) {
+    super(tituloOferta);
     this.precioAlquilerMensual = precioAlquilerMensual;
     this.mesesFianza = mesesFianza;
   }
