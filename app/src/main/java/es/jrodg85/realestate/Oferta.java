@@ -1,31 +1,38 @@
 package es.jrodg85.realestate;
 
-public abstract class Oferta implements OfertaInterfaz {
+public abstract class Oferta {
 
-  // añado campos a Oferta
+  // atributos
 
+  private long idOferta;
   private String tituloOferta;
 
-  // Añado getters a Oferta
+  // getters
 
-  @Override
+  public long getIdOferta() {
+    return idOferta;
+  }
+
   public String getTituloOferta() {
     return tituloOferta;
   }
 
-  // Añado setters a Oferta
+  // setters
 
-  @Override
+  public void setIdOferta(long idOferta) {
+    this.idOferta = idOferta;
+  }
+
   public void setTituloOferta(String tituloOferta) {
     this.tituloOferta = tituloOferta;
   }
 
-
-  // añado constructores
+  // contructores
 
   public Oferta() {}
 
-  public Oferta(String tituloOferta) {
+  public Oferta(long idOferta, String tituloOferta) {
+    this.idOferta = idOferta;
     this.tituloOferta = tituloOferta;
   }
 

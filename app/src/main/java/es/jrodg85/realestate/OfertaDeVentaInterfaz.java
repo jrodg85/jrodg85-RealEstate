@@ -4,8 +4,12 @@ package es.jrodg85.realestate;
 
 public interface OfertaDeVentaInterfaz {
 
-  public float getPrecioVenta();
+  double getPrecioAlquilerMensual();
 
-  public void setPrecioVenta(float precioVenta);
+  int getMesesFianza();
+
+  void setPrecioAlquilerMensual(float precioAlquilerMensual);
+
+  void setMesesFianza(int mesesFianza);
 
 }

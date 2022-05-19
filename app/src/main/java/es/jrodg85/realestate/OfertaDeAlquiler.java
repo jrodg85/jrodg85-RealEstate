@@ -2,51 +2,31 @@ package es.jrodg85.realestate;
 
 public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz {
 
-  // añado campos de oferta de alquiler
+  // atributos
 
-  private float precioAlquilerMensual;
-  private int mesesFianza;
+  private double precioDeVenta;
 
-  // añado getters a oferta de alquiler
-
-  @Override
-  public float getPrecioAlquilerMensual() {
-    return precioAlquilerMensual;
-  }
+  // get
 
   @Override
-  public int getMesesFianza() {
-    return mesesFianza;
+  public double getPrecioDeVenta() {
+    return precioDeVenta;
   }
 
-  // añado setters a oferta de alquiler
+  // setter
 
   @Override
-  public void setPrecioAlquilerMensual(float precioAlquilerMensual) {
-    this.precioAlquilerMensual = precioAlquilerMensual;
+  public void setPrecioDeVenta(double precioDeVenta) {
+    this.precioDeVenta = precioDeVenta;
   }
 
-  @Override
-  public void setMesesFianza(int mesesFianza) {
-    this.mesesFianza = mesesFianza;
-  }
 
-  // añado constructor de la clase vivienda
+  // contructor
 
-  public OfertaDeAlquiler() {};
+  public OfertaDeAlquiler() {}
 
-
-
-  public OfertaDeAlquiler(String tituloOferta, float precioAlquilerMensual, int mesesFianza) {
-    super(tituloOferta);
-    this.precioAlquilerMensual = precioAlquilerMensual;
-    this.mesesFianza = mesesFianza;
-  }
-
-  @Override
-  public String toString() {
-    return "La orferta de alquiler tiene un precio de renta mensual de "
-        + getPrecioAlquilerMensual() + "€/mes, y una fianza de " + getMesesFianza() + " meses.";
+  public OfertaDeAlquiler(double precioDeVenta) {
+    this.precioDeVenta = precioDeVenta;
   }
 
 }

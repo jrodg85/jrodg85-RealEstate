@@ -2,18 +2,21 @@ package es.jrodg85.realestate;
 
 public class Vivienda {
 
-  // Atributos de la clase Vivienda
+  // atributos
 
+  private long idVivienda;
   private String propietario;
   private String provincia;
   private String ciudad;
-  private String direccion;
-  private int codigoPostal;
+  private String codigoPostal;
   private String idReferenciaCatastral;
-  private int superficie;
+  private double superficie;
 
+  // getters
 
-  // getters de la clase Vivienda
+  public long getIdVivienda() {
+    return idVivienda;
+  }
 
   public String getPropietario() {
     return propietario;
@@ -27,11 +30,7 @@ public class Vivienda {
     return ciudad;
   }
 
-  public String getDireccion() {
-    return direccion;
-  }
-
-  public int getCodigoPostal() {
+  public String getCodigoPostal() {
     return codigoPostal;
   }
 
@@ -39,11 +38,15 @@ public class Vivienda {
     return idReferenciaCatastral;
   }
 
-  public int getSuperficie() {
+  public double getSuperficie() {
     return superficie;
   }
 
-  // Setters de la clase Vivienda
+  // setters
+
+  public void setIdVivienda(long idVivienda) {
+    this.idVivienda = idVivienda;
+  }
 
   public void setPropietario(String propietario) {
     this.propietario = propietario;
@@ -57,11 +60,7 @@ public class Vivienda {
     this.ciudad = ciudad;
   }
 
-  public void setDireccion(String direccion) {
-    this.direccion = direccion;
-  }
-
-  public void setCodigoPostal(int codigoPostal) {
+  public void setCodigoPostal(String codigoPostal) {
     this.codigoPostal = codigoPostal;
   }
 
@@ -72,30 +71,21 @@ public class Vivienda {
   public void setSuperficie(int superficie) {
     this.superficie = superficie;
   }
-
   // contructores
 
-  public Vivienda() {};
+  public Vivienda() {}
 
-  public Vivienda(String propietario, String provincia, String ciudad, String direccion,
-      int codigoPostal, String idReferenciaCatastral, int superficie) {
-    super();
+  public Vivienda(long idVivienda, String propietario, String provincia, String ciudad,
+      String codigoPostal, String idReferenciaCatastral, double superficie) {
+    this.idVivienda = idVivienda;
     this.propietario = propietario;
     this.provincia = provincia;
     this.ciudad = ciudad;
-    this.direccion = direccion;
     this.codigoPostal = codigoPostal;
     this.idReferenciaCatastral = idReferenciaCatastral;
     this.superficie = superficie;
   }
 
-  // añado toString a vivienda
 
-
-  @Override
-  public String toString() {
-    return "La vivienda, sita en " + getDireccion() + ", codigo postal " + getCodigoPostal()
-        + " de la ciudad de " + getCiudad() + ",  provinvia de " + getProvincia();
-  }
 
 }
