@@ -31,8 +31,7 @@ public abstract class Oferta {
 
   public Oferta() {}
 
-  public Oferta(long idOferta, String tituloOferta) {
-    this.idOferta = idOferta;
+  public Oferta(String tituloOferta) {
     this.tituloOferta = tituloOferta;
   }
 

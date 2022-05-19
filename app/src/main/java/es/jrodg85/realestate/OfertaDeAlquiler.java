@@ -20,7 +20,6 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
     this.precioDeVenta = precioDeVenta;
   }
 
-
   // contructor
 
   public OfertaDeAlquiler() {}
