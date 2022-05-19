@@ -75,9 +75,8 @@ public class Vivienda {
 
   public Vivienda() {}
 
-  public Vivienda(long idVivienda, String propietario, String provincia, String ciudad,
-      String codigoPostal, String idReferenciaCatastral, double superficie) {
-    this.idVivienda = idVivienda;
+  public Vivienda(String propietario, String provincia, String ciudad, String codigoPostal,
+      String idReferenciaCatastral, double superficie) {
     this.propietario = propietario;
     this.provincia = provincia;
     this.ciudad = ciudad;
