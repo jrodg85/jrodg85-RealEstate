@@ -1,6 +1,6 @@
 package es.jrodg85.realestate;
 
-public abstract class Oferta {
+public abstract class Oferta implements OfertaInterfaz {
 
   // añado campos a Oferta
 
@@ -8,12 +8,14 @@ public abstract class Oferta {
 
   // Añado getters a Oferta
 
+  @Override
   public String getTituloOferta() {
     return tituloOferta;
   }
 
   // Añado setters a Oferta
 
+  @Override
   public void setTituloOferta(String tituloOferta) {
     this.tituloOferta = tituloOferta;
   }
