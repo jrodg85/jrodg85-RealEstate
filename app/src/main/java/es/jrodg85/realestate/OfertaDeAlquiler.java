@@ -4,29 +4,39 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   // atributos
 
-  private double precioDeVenta;
+  private double precioAlquilerMensual;
+  private int mesesFianza;
 
-  // get
-
-  @Override
-  public double getPrecioDeVenta() {
-    return precioDeVenta;
-  }
-
-  // setter
+  // geters
 
   @Override
-  public void setPrecioDeVenta(double precioDeVenta) {
-    this.precioDeVenta = precioDeVenta;
+  public double getPrecioAlquilerMensual() {
+    return precioAlquilerMensual;
   }
 
-  // contructor
+  @Override
+  public int getMesesFianza() {
+    return mesesFianza;
+  }
+
+  // setters
+
+  @Override
+  public void setPrecioAlquilerMensual(float precioAlquilerMensual) {
+    this.precioAlquilerMensual = precioAlquilerMensual;
+  }
+
+  @Override
+  public void setMesesFianza(int mesesFianza) {
+    this.mesesFianza = mesesFianza;
+  }
 
   public OfertaDeAlquiler() {}
 
-  public OfertaDeAlquiler(String tituloOferta, double precioDeVenta) {
+  public OfertaDeAlquiler(String tituloOferta, double precioAlquilerMensual, int mesesFianza) {
     super(tituloOferta);
-    this.precioDeVenta = precioDeVenta;
+    this.precioAlquilerMensual = precioAlquilerMensual;
+    this.mesesFianza = mesesFianza;
   }
 
 }
