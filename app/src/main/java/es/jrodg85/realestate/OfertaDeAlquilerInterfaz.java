@@ -1,7 +1,5 @@
 package es.jrodg85.realestate;
 
-
-
 public interface OfertaDeAlquilerInterfaz {
 
   double getPrecioAlquilerMensual();

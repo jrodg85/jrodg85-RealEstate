@@ -36,5 +36,3 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
   }
 
 }
-
-

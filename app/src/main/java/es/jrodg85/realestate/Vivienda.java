@@ -47,7 +47,6 @@ public class Vivienda {
     return superficie;
   }
 
-
   // setters
 
   public void setIdVivienda(long idVivienda) {
@@ -83,7 +82,6 @@ public class Vivienda {
 
   }
 
-
   // contructores
 
   public Vivienda() {}
@@ -108,4 +106,3 @@ public class Vivienda {
   }
 
 }
-// fin 01jun 12.25
