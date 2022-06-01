@@ -39,4 +39,10 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
     this.mesesFianza = mesesFianza;
   }
 
+  @Override
+  public String toString() {
+    return "OfertaDeAlquiler [Precio Alquiler Mensual = " + getPrecioAlquilerMensual()
+        + ", Meses Fianza = " + getMesesFianza() + ", Titulo Oferta = " + getTituloOferta() + " ]";
+  }
+
 }

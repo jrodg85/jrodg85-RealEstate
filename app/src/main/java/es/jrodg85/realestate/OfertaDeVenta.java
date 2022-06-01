@@ -29,6 +29,12 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
     this.precioDeVenta = precioDeVenta;
   }
 
+  @Override
+  public String toString() {
+    return "Oferta De Venta [PrecioDeVenta = " + getPrecioDeVenta() + ", Titulo Oferta = "
+        + getTituloOferta() + " ]";
+  }
+
 }
 
 

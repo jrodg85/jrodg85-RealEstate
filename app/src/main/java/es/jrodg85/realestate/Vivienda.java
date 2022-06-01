@@ -47,6 +47,7 @@ public class Vivienda {
     return superficie;
   }
 
+
   // setters
 
   public void setIdVivienda(long idVivienda) {
@@ -79,7 +80,10 @@ public class Vivienda {
 
   public void setSuperficie(int superficie) {
     this.superficie = superficie;
+
   }
+
+
   // contructores
 
   public Vivienda() {}
@@ -95,6 +99,13 @@ public class Vivienda {
     this.superficie = superficie;
   }
 
-
+  @Override
+  public String toString() {
+    return "Vivienda [propietario=" + getPropietario() + ", provincia=" + getProvincia()
+        + ", ciudad=" + getCiudad() + ", direccion=" + getDireccion() + ", codigoPostal="
+        + getCodigoPostal() + ", idReferenciaCatastral=" + getIdReferenciaCatastral()
+        + ", superficie=" + getSuperficie() + ", ofertas=" + "]";
+  }
 
 }
+// fin 01jun 12.25
