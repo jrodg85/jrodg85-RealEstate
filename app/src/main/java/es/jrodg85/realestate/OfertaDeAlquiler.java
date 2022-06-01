@@ -22,7 +22,7 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
   // setters
 
   @Override
-  public void setPrecioAlquilerMensual(float precioAlquilerMensual) {
+  public void setPrecioAlquilerMensual(double precioAlquilerMensual) {
     this.precioAlquilerMensual = precioAlquilerMensual;
   }
 

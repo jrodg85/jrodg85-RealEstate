@@ -8,7 +8,7 @@ public interface OfertaDeAlquilerInterfaz {
 
   int getMesesFianza();
 
-  void setPrecioAlquilerMensual(float precioAlquilerMensual);
+  void setPrecioAlquilerMensual(double precioAlquilerMensual);
 
   void setMesesFianza(int mesesFianza);
 
