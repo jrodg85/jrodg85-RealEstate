@@ -9,10 +9,12 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   // geters
 
+
   @Override
   public Double getPrecioAlquilerMensual() {
     return precioAlquilerMensual;
   }
+
 
   @Override
   public Integer getMesesFianza() {
@@ -21,10 +23,12 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   // setters
 
+
   @Override
   public void setPrecioAlquilerMensual(Double precioAlquilerMensual) {
     this.precioAlquilerMensual = precioAlquilerMensual;
   }
+
 
   @Override
   public void setMesesFianza(Integer mesesFianza) {
