@@ -4,18 +4,18 @@ public class Vivienda {
 
   // atributos
 
-  private long idVivienda;
+  private Long idVivienda;
   private String propietario;
   private String provincia;
   private String ciudad;
   private String direccion;
-  private int codigoPostal;
+  private Integer codigoPostal;
   private String idReferenciaCatastral;
-  private double superficie;
+  private Double superficie;
 
   // getters
 
-  public long getIdVivienda() {
+  public Long getIdVivienda() {
     return idVivienda;
   }
 
@@ -35,7 +35,7 @@ public class Vivienda {
     return direccion;
   }
 
-  public int getCodigoPostal() {
+  public Integer getCodigoPostal() {
     return codigoPostal;
   }
 
@@ -43,13 +43,13 @@ public class Vivienda {
     return idReferenciaCatastral;
   }
 
-  public double getSuperficie() {
+  public Double getSuperficie() {
     return superficie;
   }
 
   // setters
 
-  public void setIdVivienda(long idVivienda) {
+  public void setIdVivienda(Long idVivienda) {
     this.idVivienda = idVivienda;
   }
 
@@ -69,7 +69,7 @@ public class Vivienda {
     this.direccion = direccion;
   }
 
-  public void setCodigoPostal(int codigoPostal) {
+  public void setCodigoPostal(Integer codigoPostal) {
     this.codigoPostal = codigoPostal;
   }
 
@@ -77,7 +77,7 @@ public class Vivienda {
     this.idReferenciaCatastral = idReferenciaCatastral;
   }
 
-  public void setSuperficie(int superficie) {
+  public void setSuperficie(Double superficie) {
     this.superficie = superficie;
 
   }
@@ -87,7 +87,7 @@ public class Vivienda {
   public Vivienda() {}
 
   public Vivienda(String propietario, String provincia, String ciudad, String direccion,
-      int codigoPostal, String idReferenciaCatastral, double superficie) {
+      Integer codigoPostal, String idReferenciaCatastral, Double superficie) {
     this.propietario = propietario;
     this.provincia = provincia;
     this.ciudad = ciudad;

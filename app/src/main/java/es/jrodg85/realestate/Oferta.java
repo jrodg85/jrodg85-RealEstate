@@ -4,12 +4,12 @@ public abstract class Oferta {
 
   // atributos
 
-  private long idOferta;
+  private Long idOferta;
   private String tituloOferta;
 
   // getters
 
-  public long getIdOferta() {
+  public Long getIdOferta() {
     return idOferta;
   }
 
@@ -19,7 +19,7 @@ public abstract class Oferta {
 
   // setters
 
-  public void setIdOferta(long idOferta) {
+  public void setIdOferta(Long idOferta) {
     this.idOferta = idOferta;
   }
 

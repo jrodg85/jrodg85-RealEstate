@@ -4,19 +4,21 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
 
   // atributos
 
-  private double precioDeVenta;
+  private Double precioDeVenta;
 
   // get
 
+
   @Override
-  public double getPrecioDeVenta() {
+  public Double getPrecioDeVenta() {
     return precioDeVenta;
   }
 
   // setter
 
+
   @Override
-  public void setPrecioDeVenta(double precioDeVenta) {
+  public void setPrecioDeVenta(Double precioDeVenta) {
     this.precioDeVenta = precioDeVenta;
   }
 
@@ -24,7 +26,7 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
 
   public OfertaDeVenta() {}
 
-  public OfertaDeVenta(String tituloOferta, double precioDeVenta) {
+  public OfertaDeVenta(String tituloOferta, Double precioDeVenta) {
     super(tituloOferta);
     this.precioDeVenta = precioDeVenta;
   }

@@ -1,9 +1,11 @@
 package es.jrodg85.realestate;
 
+
+
 public interface OfertaDeVentaInterfaz {
 
-  double getPrecioDeVenta();
+  Double getPrecioDeVenta();
 
-  void setPrecioDeVenta(double precioDeVenta);
+  void setPrecioDeVenta(Double precioDeVenta);
 
 }
