@@ -13,7 +13,7 @@ public class Vivienda {
   private String idReferenciaCatastral;
   private Double superficie;
   private Integer habitaciones;
-  private Integer baños;
+  private Integer banyos;
 
   // getters
 
@@ -54,7 +54,7 @@ public class Vivienda {
   }
 
   public Integer getBaños() {
-    return baños;
+    return banyos;
   }
 
   // setters
@@ -97,8 +97,8 @@ public class Vivienda {
     this.habitaciones = habitaciones;
   }
 
-  public void setBaños(Integer baños) {
-    this.baños = baños;
+  public void setBaños(Integer banyos) {
+    this.banyos = banyos;
   }
 
 
@@ -108,7 +108,7 @@ public class Vivienda {
 
   public Vivienda(String propietario, String provincia, String ciudad, String direccion,
       Integer codigoPostal, String idReferenciaCatastral, Double superficie, Integer habitaciones,
-      Integer baños) {
+      Integer banyos) {
     this.propietario = propietario;
     this.provincia = provincia;
     this.ciudad = ciudad;
@@ -117,7 +117,7 @@ public class Vivienda {
     this.idReferenciaCatastral = idReferenciaCatastral;
     this.superficie = superficie;
     this.habitaciones = habitaciones;
-    this.baños = baños;
+    this.banyos = banyos;
   }
 
   @Override
