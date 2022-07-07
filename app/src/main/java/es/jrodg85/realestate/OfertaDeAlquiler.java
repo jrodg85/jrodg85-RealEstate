@@ -37,8 +37,7 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
 
   public OfertaDeAlquiler() {}
 
-  public OfertaDeAlquiler(String tituloOferta, Double precioAlquilerMensual, Integer mesesFianza) {
-    super(tituloOferta);
+  public OfertaDeAlquiler(Double precioAlquilerMensual, Integer mesesFianza) {
     this.precioAlquilerMensual = precioAlquilerMensual;
     this.mesesFianza = mesesFianza;
   }
@@ -46,7 +45,7 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
   @Override
   public String toString() {
     return "OfertaDeAlquiler [Precio Alquiler Mensual = " + getPrecioAlquilerMensual()
-        + ", Meses Fianza = " + getMesesFianza() + ", Titulo Oferta = " + getTituloOferta() + " ]";
+        + ", Meses Fianza = " + getMesesFianza() + " ]";
   }
 
 }
