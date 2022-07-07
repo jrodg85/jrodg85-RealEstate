@@ -12,6 +12,8 @@ public class Vivienda {
   private Integer codigoPostal;
   private String idReferenciaCatastral;
   private Double superficie;
+  private Integer habitaciones;
+  private Integer baños;
 
   // getters
 
@@ -45,6 +47,14 @@ public class Vivienda {
 
   public Double getSuperficie() {
     return superficie;
+  }
+
+  public Integer getHabitaciones() {
+    return habitaciones;
+  }
+
+  public Integer getBaños() {
+    return baños;
   }
 
   // setters
@@ -82,12 +92,23 @@ public class Vivienda {
 
   }
 
+
+  public void setHabitaciones(Integer habitaciones) {
+    this.habitaciones = habitaciones;
+  }
+
+  public void setBaños(Integer baños) {
+    this.baños = baños;
+  }
+
+
   // contructores
 
   public Vivienda() {}
 
   public Vivienda(String propietario, String provincia, String ciudad, String direccion,
-      Integer codigoPostal, String idReferenciaCatastral, Double superficie) {
+      Integer codigoPostal, String idReferenciaCatastral, Double superficie, Integer habitaciones,
+      Integer baños) {
     this.propietario = propietario;
     this.provincia = provincia;
     this.ciudad = ciudad;
@@ -95,6 +116,8 @@ public class Vivienda {
     this.codigoPostal = codigoPostal;
     this.idReferenciaCatastral = idReferenciaCatastral;
     this.superficie = superficie;
+    this.habitaciones = habitaciones;
+    this.baños = baños;
   }
 
   @Override
