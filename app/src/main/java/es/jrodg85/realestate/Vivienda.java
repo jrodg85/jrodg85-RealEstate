@@ -53,7 +53,7 @@ public class Vivienda {
     return habitaciones;
   }
 
-  public Integer getBaños() {
+  public Integer getBanyos() {
     return banyos;
   }
 
@@ -97,7 +97,7 @@ public class Vivienda {
     this.habitaciones = habitaciones;
   }
 
-  public void setBaños(Integer banyos) {
+  public void setBanyos(Integer banyos) {
     this.banyos = banyos;
   }
 
