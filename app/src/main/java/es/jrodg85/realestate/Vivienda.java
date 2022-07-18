@@ -120,7 +120,7 @@ public class Vivienda {
 
   // relacion en ambos sentidos para oferta
 
-  public void addOfertaAlquilerConId(Oferta oferta) {
+  public void addOferta(Oferta oferta) {
     getOfertasDeVivienda().add(oferta);
     oferta.setVivienda(this);
   }
