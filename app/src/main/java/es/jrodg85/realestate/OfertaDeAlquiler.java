@@ -1,6 +1,6 @@
 package es.jrodg85.realestate;
 
-public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz {
+public class OfertaDeAlquiler extends Oferta {
 
   // atributos
 
@@ -10,13 +10,11 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
   // geters
 
 
-  @Override
   public Double getPrecioAlquilerMensual() {
     return precioAlquilerMensual;
   }
 
 
-  @Override
   public Integer getMesesFianza() {
     return mesesFianza;
   }
@@ -24,13 +22,11 @@ public class OfertaDeAlquiler extends Oferta implements OfertaDeAlquilerInterfaz
   // setters
 
 
-  @Override
   public void setPrecioAlquilerMensual(Double precioAlquilerMensual) {
     this.precioAlquilerMensual = precioAlquilerMensual;
   }
 
 
-  @Override
   public void setMesesFianza(Integer mesesFianza) {
     this.mesesFianza = mesesFianza;
   }

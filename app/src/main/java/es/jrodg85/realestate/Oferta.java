@@ -1,18 +1,23 @@
 package es.jrodg85.realestate;
 
-public abstract class Oferta {
+public class Oferta {
 
   // atributos
 
   private Long idOferta;
+  private Vivienda vivienda;
 
   // getters
+
+
 
   public Long getIdOferta() {
     return idOferta;
   }
 
-
+  public Vivienda getVivienda() {
+    return vivienda;
+  }
 
   // setters
 
@@ -20,7 +25,9 @@ public abstract class Oferta {
     this.idOferta = idOferta;
   }
 
-
+  public void setVivienda(Vivienda vivienda) {
+    this.vivienda = vivienda;
+  }
 
   // contructores
 

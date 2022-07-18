@@ -1,6 +1,6 @@
 package es.jrodg85.realestate;
 
-public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
+public class OfertaDeVenta extends Oferta {
 
   // atributos
 
@@ -9,7 +9,6 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
   // get
 
 
-  @Override
   public Double getPrecioDeVenta() {
     return precioDeVenta;
   }
@@ -17,7 +16,6 @@ public class OfertaDeVenta extends Oferta implements OfertaDeVentaInterfaz {
   // setter
 
 
-  @Override
   public void setPrecioDeVenta(Double precioDeVenta) {
     this.precioDeVenta = precioDeVenta;
   }

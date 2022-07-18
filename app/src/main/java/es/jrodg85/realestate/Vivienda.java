@@ -1,5 +1,8 @@
 package es.jrodg85.realestate;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Vivienda {
 
   // atributos
@@ -14,6 +17,7 @@ public class Vivienda {
   private Double superficie;
   private Integer habitaciones;
   private Integer banyos;
+  private Collection<Oferta> ofertasDeVivienda = new ArrayList<>();
 
   // getters
 
@@ -56,6 +60,12 @@ public class Vivienda {
   public Integer getBanyos() {
     return banyos;
   }
+
+
+  public Collection<Oferta> getOfertasDeVivienda() {
+    return ofertasDeVivienda;
+  }
+
 
   // setters
 
@@ -100,6 +110,21 @@ public class Vivienda {
   public void setBanyos(Integer banyos) {
     this.banyos = banyos;
   }
+
+
+  public void setOfertasDeVivienda(Collection<Oferta> ofertasDeVivienda) {
+    this.ofertasDeVivienda = ofertasDeVivienda;
+  }
+
+
+
+  // relacion en ambos sentidos para oferta
+
+  public void addOfertaAlquilerConId(Oferta oferta) {
+    getOfertasDeVivienda().add(oferta);
+    oferta.setVivienda(this);
+  }
+
 
 
   // contructores
