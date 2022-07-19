@@ -22,9 +22,12 @@ public class OfertaDeVenta extends Oferta {
 
   // contructor
 
-  public OfertaDeVenta() {}
+  public OfertaDeVenta() {
+    super();
+  }
 
-  public OfertaDeVenta(String tituloOferta, Double precioDeVenta) {
+  public OfertaDeVenta(Vivienda vivienda, String tituloOferta, Double precioDeVenta) {
+    super(vivienda);
     this.precioDeVenta = precioDeVenta;
   }
 

@@ -31,9 +31,13 @@ public class OfertaDeAlquiler extends Oferta {
     this.mesesFianza = mesesFianza;
   }
 
-  public OfertaDeAlquiler() {}
+  public OfertaDeAlquiler() {
+    super();
 
-  public OfertaDeAlquiler(Double precioAlquilerMensual, Integer mesesFianza) {
+  }
+
+  public OfertaDeAlquiler(Vivienda vivienda, Double precioAlquilerMensual, Integer mesesFianza) {
+    super(vivienda);
     this.precioAlquilerMensual = precioAlquilerMensual;
     this.mesesFianza = mesesFianza;
   }

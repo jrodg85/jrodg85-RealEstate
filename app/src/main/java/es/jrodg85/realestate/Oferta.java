@@ -27,11 +27,16 @@ public class Oferta {
 
   public void setVivienda(Vivienda vivienda) {
     this.vivienda = vivienda;
+
   }
 
   // contructores
 
   public Oferta() {}
 
+
+  public Oferta(Vivienda vivienda) {
+    this.vivienda = vivienda;
+  }
 
 }
