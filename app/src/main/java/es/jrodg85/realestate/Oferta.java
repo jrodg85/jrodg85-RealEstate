@@ -35,8 +35,5 @@ public class Oferta {
   public Oferta() {}
 
 
-  public Oferta(Vivienda vivienda) {
-    this.vivienda = vivienda;
-  }
 
 }
