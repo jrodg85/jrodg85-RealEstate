@@ -17,7 +17,7 @@ public class Vivienda {
   private Double superficie;
   private Integer habitaciones;
   private Integer banyos;
-  private Collection<Oferta> ofertasDeVivienda;
+  private Collection<Oferta> ofertasDeVivienda = new ArrayList<>();
 
   // getters
 
@@ -121,11 +121,9 @@ public class Vivienda {
   // relacion en ambos sentidos para oferta
 
   public void addOferta(Oferta oferta) {
-    this.getOfertasDeVivienda().add(oferta);
-    if (oferta.getVivienda() != this)
-      oferta.setVivienda(this);
+    getOfertasDeVivienda().add(oferta);
+    oferta.setVivienda(this);
   }
-
 
 
   // contructores
@@ -144,7 +142,6 @@ public class Vivienda {
     this.superficie = superficie;
     this.habitaciones = habitaciones;
     this.banyos = banyos;
-    ofertasDeVivienda = new ArrayList<>();
   }
 
   @Override
