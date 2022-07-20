@@ -27,6 +27,7 @@ public class OfertaDeVenta extends Oferta {
   }
 
   public OfertaDeVenta(Vivienda vivienda, String tituloOferta, Double precioDeVenta) {
+    super(vivienda);
     this.precioDeVenta = precioDeVenta;
   }
 

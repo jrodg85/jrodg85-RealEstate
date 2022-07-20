@@ -36,4 +36,9 @@ public abstract class Oferta {
 
 
 
+  public Oferta(Vivienda vivienda) {
+    this.vivienda = vivienda;
+  }
+
+
 }
