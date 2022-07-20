@@ -1,6 +1,6 @@
 package es.jrodg85.realestate;
 
-public class Oferta {
+public abstract class Oferta {
 
   // atributos
 
